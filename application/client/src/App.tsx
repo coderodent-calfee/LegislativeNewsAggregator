@@ -11,7 +11,12 @@ function App() {
         <p>
           This is the Client: A React Application!
         </p>
-        <GetButton />
+          <GetButton path={'api/news'} params={{state: 'x'}}>
+              Get Something
+          </GetButton>
+          <GetButton path={'api/news/1234567890'} >
+              Get Something Else
+          </GetButton>
       </header>
     </div>
   );
