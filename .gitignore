@@ -28,3 +28,4 @@ dist-ssr
 .idea/
 audit
 build/*
+build
