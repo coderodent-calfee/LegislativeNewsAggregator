@@ -1,0 +1,31 @@
+{
+  "name": "news-aggregator",
+  "version": "1.0.0",
+  "description": "Aggregates the News",
+  "main": "index.js",
+  "workspaces": [
+    "application/*"
+  ],
+  "scripts": {
+    "client" : "npm run --workspace=client",
+    "server" : "npm run --workspace=server",
+    "both" : "npm run --workspaces",
+    "launch" : "start npm run client start && start npm run server start",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderodent-calfee/NewsAggregator-monorepo.git"
+  },
+  "keywords": [
+    "news",
+    "aggregator",
+    "monorepo"
+  ],
+  "author": "coderodent-calfee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderodent-calfee/NewsAggregator-monorepo/issues"
+  },
+  "homepage": "https://github.com/coderodent-calfee/NewsAggregator-monorepo#readme"
+}
